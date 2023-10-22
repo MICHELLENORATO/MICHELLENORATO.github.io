@@ -1,8 +1,12 @@
+/* Importa la fuente "Roboto" desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/* Aplica la fuente "Roboto" a un elemento específico, por ejemplo, un párrafo */
 p {
-    font-family: "Apple Symbols", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -46,13 +50,13 @@ footer {
     article {
         background-color: #f9f9f9e0;
         padding: 20px;
-        width: 90%;
+        width: 92%;
         margin: auto;
         margin-top: 10px;
     }
    
     main {
-        width: 98%; /* El contenido ocupa el 95% de la pantalla */
+        width: 92%; /* El contenido ocupa el 95% de la pantalla */
         margin: auto;    
     }
     
