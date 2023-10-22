@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("4.jpeg");
-    
    
 }
 
@@ -24,20 +23,6 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
 
 main {
     margin: 20px;
@@ -55,6 +40,25 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+/* Estilo para dispositivos más pequeños (hasta 768px de ancho) */
+@media (max-width: 768px) {
+    article {
+        background-color: #f9f9f9e0;
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+   
+    main {
+        width: 98%; /* El contenido ocupa el 95% de la pantalla */
+        margin: auto;    
+    }
+    
+    header h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para el título */
+    }
 }
 
 
