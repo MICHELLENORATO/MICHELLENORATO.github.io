@@ -1616,7 +1616,7 @@ a {
 
 .cabezera {
     color: #fff !important;
-    background-image: url("../1.jpeg");
+    background-image: url("1.jpeg");
     background-size: cover;
 background-repeat:no-repeat ;
 background-position: center -20px;
