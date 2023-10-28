@@ -1,126 +1,386 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
+    <title>Ensayo</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Ensayo</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor,
+        .fa-coffee {
+            font-size: 200px
+        }
+
+        .w3-jumbo {
+            font-size: 10px;
+        }
+
+        .w3-bar {
+            background: rgba(226, 7, 7, 0);
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contenedor img {
+            max-width: 100%;
+            height: auto;
+            margin: 12px;
+            margin-bottom: 50px;
+            /* Espacio entre las imágenes */
+        }
+
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+                /* Cambia a una columna cuando la pantalla se hace más estrecha */
+                align-items: center;
+                /* Centra verticalmente las imágenes */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contenedor img {
+                width: 90%;
+                /* Reduce el tamaño de las imágenes a la mitad cuando la pantalla es más estrecha */
+            }
+        }
+
+        .sombra {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Inversiones. Acciones. Bolsa y empresas N.T.F. <br>
-            Investments. Behavior. Stock market and N.T.F companies</h1>
-    </header>
+    <div class="cabezera"id="inicio">
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black"
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Principal</a>
+                <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacto</a>
+            </div>
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="#" class="w3-bar-item w3-button w3-padding-large">Contacto</a>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+            <h3 class="w3-margin w3-jumbo"> Blog financiero</h3>
+            <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"id="verEnsayo">Ver Ensayo</button>
+        </header>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container" >
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Sobre el blog:</h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+                <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
 
-    <main class="main">
+        </div>
+    </div>
+    <div class="contenedor">
+
+        <img src="m1.jpeg" alt="imagen1" width="480px" height="380px" class="sombra">
+        <img src="m4.jpeg" alt="imagen4" width="480px" height="380px" class="sombra">
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container "id="Ensayo">
+        <div class="w3-content">
+
+            <div class="w3-twothird">
+
+                <h3 class="w3-padding-32">Inversiones. Acciones. Bolsa y empresas N.T.F. <br>
+                    Investments. Behavior. Stock market and N.T.F companies</h3>
+
+                <article>
+
+                    <p>
+                        La inversión es un componente esencial y dinámico de la economía global que impulsa el
+                        crecimiento
+                        económico, fomenta la innovación y desempeña un papel crucial en la prosperidad de individuos,
+                        empresas
+                        y países en su conjunto. Representa la dedicación de recursos financieros con el objetivo de
+                        obtener
+                        beneficios en el futuro. Este proceso no solo permite a individuos y empresas aumentar su
+                        patrimonio,
+                        sino que también contribuye al funcionamiento fluido de los mercados financieros, que a su vez
+                        influyen
+                        en la economía mundial en su conjunto.
+                    </p>
+                    <p>Las inversiones, en su esencia, son una expresión de confianza en el potencial de crecimiento y
+                        desarrollo. Ya sea que se trate de un individuo que ahorra e invierte para asegurar un futuro
+                        financiero
+                        sólido o de una empresa que busca expandir sus operaciones y crear empleos, la inversión es el
+                        motor que
+                        impulsa el progreso económico. Este proceso permite a las empresas adquirir activos, financiar
+                        proyectos
+                        de expansión y desarrollar nuevas tecnologías, lo que a su vez estimula el crecimiento y la
+                        innovación.
+                        Además, la inversión proporciona a los inversores individuales la oportunidad de acumular
+                        riqueza a lo
+                        largo del tiempo, lo que puede ser esencial para la jubilación o para cumplir metas financieras
+                        a corto
+                        y largo plazo.
+                    </p>
+                    <p>Las acciones, representan una de las formas más comunes y accesibles para que los individuos y
+                        las
+                        empresas participen en los mercados financieros y se beneficien del crecimiento de las empresas.
+                        Al
+                        adquirir acciones, los inversores adquieren una parte de propiedad en la empresa emisora, lo que
+                        les
+                        otorga derechos y beneficios significativos. Esta modalidad de inversión ha sido reconocida por
+                        expertos
+                        financieros destacados, incluido Peter Lynch, quien dirigió el Fidelity Magellan Fund con éxito
+                        durante
+                        años y que, entre sus sabios consejos, enfatizaba la importancia de la confianza y la
+                        perspectiva a
+                        largo plazo en la inversión en acciones. </p>
+
+                    <p>
+                        Las acciones, en su carácter de instrumento de inversión, ofrecen una serie de ventajas que las
+                        hacen
+                        atractivas para una amplia gama de inversores. En primer lugar, proporcionan un alto grado de
+                        liquidez,
+                        lo que significa que los inversores pueden comprar y vender acciones con relativa facilidad en
+                        los
+                        mercados bursátiles, lo que facilita la adaptación de sus carteras a las condiciones cambiantes
+                        del
+                        mercado. Esta liquidez es fundamental, ya que permite a los inversores responder a oportunidades
+                        o
+                        riesgos de manera oportuna. Además, las acciones tienen el potencial de generar ingresos de dos
+                        formas
+                        principales. En primer lugar, las empresas pueden distribuir parte de sus ganancias a los
+                        accionistas en
+                        forma de dividendos, que representan un flujo constante de ingresos. En segundo lugar, las
+                        ganancias de
+                        capital pueden surgir de la apreciación del valor de las acciones con el tiempo, lo que brinda
+                        la
+                        oportunidad de vender las acciones a un precio superior al de compra. No obstante, es importante
+                        destacar que las inversiones en acciones también conllevan riesgos inherentes. El valor de las
+                        acciones
+                        puede fluctuar significativamente en respuesta a una variedad de factores, como eventos
+                        económicos,
+                        cambios en la industria y desarrollos geopolíticos. Por lo tanto, es esencial que los inversores
+                        comprendan la importancia de una gestión de riesgos efectiva y la necesidad de mantener una
+                        perspectiva
+                        a largo plazo.
+                    </p>
+                    <p>Las bolsas de valores, sin lugar a dudas, representan el epicentro de las transacciones
+                        financieras a
+                        nivel mundial. Estos mercados organizados desempeñan un papel fundamental en la economía global
+                        al
+                        proporcionar un escenario donde los inversores pueden comprar y vender una amplia gama de
+                        instrumentos
+                        financieros, que incluyen no solo acciones, sino también bonos, materias primas y derivados. Son
+                        un
+                        reflejo de la dinámica económica a nivel mundial y funcionan como un indicador que refleja el
+                        estado de
+                        la economía y el apetito de los inversores. La tecnología, en los últimos años, ha sido un
+                        catalizador
+                        de cambios significativos en el funcionamiento de las bolsas de valores. La digitalización de
+                        las
+                        transacciones y la adopción de sistemas de comercio electrónico han permitido la realización de
+                        transacciones casi instantáneas, lo que ha transformado la forma en que los inversores
+                        interactúan con
+                        los mercados financieros. Esto, a su vez, ha democratizado el acceso a la inversión, ya que las
+                        plataformas de negociación en línea han eliminado barreras geográficas y han abierto las puertas
+                        a
+                        inversores de todo el mundo. </p>
+                    <p>Las bolsas de valores desempeñan un papel crucial en el sistema financiero global, y la
+                        diversificación
+                        continúa siendo una estrategia esencial en la gestión de inversiones. La tecnología ha allanado
+                        el
+                        camino para una mayor accesibilidad y liquidez en los mercados financieros, pero la
+                        incertidumbre
+                        inherente de los mercados requiere que los inversores sean informados y cautelosos en sus
+                        decisiones. La
+                        evaluación constante de las condiciones actuales y una comprensión sólida de los principios de
+                        diversificación siguen siendo fundamentales para el éxito en el mundo de las inversiones en
+                        bolsa. </p>
+                    <p>Las empresas NTF han irrumpido en el mundo de las inversiones de manera revolucionaria, y su
+                        impacto se
+                        está haciendo sentir en múltiples ámbitos. Estas empresas representan un cambio fundamental en
+                        la forma
+                        en que los inversores pueden acceder y poseer activos. A diferencia de los fondos de inversión
+                        tradicionales, las NTF operan en la tecnología de la cadena de bloques, la misma que subyace en
+                        las
+                        criptomonedas, y hacen uso de activos digitales, como tokens, para representar la propiedad de
+                        activos
+                        subyacentes que pueden abarcar desde bienes raíces hasta obras de arte valiosas y empresas
+                        emergentes
+                        con potencial de crecimiento. El potencial disruptivo de las empresas NTF es inmenso. Por un
+                        lado, la
+                        tecnología de la cadena de bloques garantiza la transparencia, la inmutabilidad de los registros
+                        y la
+                        seguridad de las transacciones, lo que aporta un nivel de confiabilidad sin precedentes al
+                        proceso de
+                        inversión. Además, la tokenización de activos permite el fraccionamiento, lo que significa que
+                        los
+                        inversores pueden poseer una parte de un activo de alto valor, lo que antes estaba reservado a
+                        un grupo
+                        selecto de inversionistas acreditados. Esto democratiza la inversión, permitiendo que una
+                        audiencia más
+                        amplia participe en oportunidades que antes estaban fuera de su alcance. Sin embargo, a medida
+                        que las
+                        empresas NTF continúan ganando popularidad, también enfrentan desafíos significativos,
+                        especialmente en
+                        términos de regulación. La tecnología de la cadena de bloques y la tokenización de activos son
+                        relativamente nuevas en el panorama de inversión, y los marcos regulatorios varían ampliamente
+                        según las
+                        jurisdicciones. La falta de regulación adecuada podría exponer a los inversores a riesgos
+                        significativos, como fraudes o actividades ilegales. Por lo tanto, es esencial que los gobiernos
+                        y las
+                        autoridades reguladoras desarrollen marcos legales sólidos que equilibren la innovación con la
+                        protección de los inversores.</p>
+                    <p>Las inversiones, las acciones, la bolsa de valores y las empresas NTF representan pilares
+                        fundamentales
+                        en el complejo mundo de las finanzas. La inversión, en todas sus formas, encarna la búsqueda
+                        constante
+                        de un delicado equilibrio entre la prudencia y la ambición. Es un terreno donde la diligencia y
+                        la toma
+                        de decisiones informadas son esenciales para el éxito a largo plazo. La inversión es un campo en
+                        constante evolución, y aquellos que están dispuestos a adaptarse y aprender son los que tienen
+                        mayores
+                        posibilidades de cosechar los mayores beneficios financieros. </p>
+                    <p>
+                        En última instancia, la inversión es un viaje en constante evolución, que requiere tanto la
+                        búsqueda de
+                        oportunidades como la mitigación de riesgos. Aquellos que estén dispuestos a aprender, adaptarse
+                        y
+                        aplicar estrategias sólidas estarán mejor preparados para aprovechar al máximo las oportunidades
+                        y
+                        superar los desafíos en el emocionante mundo de las finanzas. La inversión es una herramienta
+                        poderosa
+                        para el crecimiento financiero, pero su éxito depende en última instancia de la preparación, la
+                        paciencia y la comprensión de los principios clave que sustentan este apasionante campo.
+                    </p>
 
 
-        <article>
+                </article>
 
-            <p>
-                La inversión es un componente esencial y dinámico de la economía global que impulsa el crecimiento
-                económico, fomenta la innovación y desempeña un papel crucial en la prosperidad de individuos, empresas
-                y países en su conjunto. Representa la dedicación de recursos financieros con el objetivo de obtener
-                beneficios en el futuro. Este proceso no solo permite a individuos y empresas aumentar su patrimonio,
-                sino que también contribuye al funcionamiento fluido de los mercados financieros, que a su vez influyen
-                en la economía mundial en su conjunto.
-            </p>
-            <p>Las inversiones, en su esencia, son una expresión de confianza en el potencial de crecimiento y
-                desarrollo. Ya sea que se trate de un individuo que ahorra e invierte para asegurar un futuro financiero
-                sólido o de una empresa que busca expandir sus operaciones y crear empleos, la inversión es el motor que
-                impulsa el progreso económico. Este proceso permite a las empresas adquirir activos, financiar proyectos
-                de expansión y desarrollar nuevas tecnologías, lo que a su vez estimula el crecimiento y la innovación.
-                Además, la inversión proporciona a los inversores individuales la oportunidad de acumular riqueza a lo
-                largo del tiempo, lo que puede ser esencial para la jubilación o para cumplir metas financieras a corto
-                y largo plazo.
-            </p>
-            <p>Las acciones, representan una de las formas más comunes y accesibles para que los individuos y las
-                empresas participen en los mercados financieros y se beneficien del crecimiento de las empresas. Al
-                adquirir acciones, los inversores adquieren una parte de propiedad en la empresa emisora, lo que les
-                otorga derechos y beneficios significativos. Esta modalidad de inversión ha sido reconocida por expertos
-                financieros destacados, incluido Peter Lynch, quien dirigió el Fidelity Magellan Fund con éxito durante
-                años y que, entre sus sabios consejos, enfatizaba la importancia de la confianza y la perspectiva a
-                largo plazo en la inversión en acciones. </p>
+            </div>
+        </div>
+    </div>
 
-            <p>
-                Las acciones, en su carácter de instrumento de inversión, ofrecen una serie de ventajas que las hacen
-                atractivas para una amplia gama de inversores. En primer lugar, proporcionan un alto grado de liquidez,
-                lo que significa que los inversores pueden comprar y vender acciones con relativa facilidad en los
-                mercados bursátiles, lo que facilita la adaptación de sus carteras a las condiciones cambiantes del
-                mercado. Esta liquidez es fundamental, ya que permite a los inversores responder a oportunidades o
-                riesgos de manera oportuna. Además, las acciones tienen el potencial de generar ingresos de dos formas
-                principales. En primer lugar, las empresas pueden distribuir parte de sus ganancias a los accionistas en
-                forma de dividendos, que representan un flujo constante de ingresos. En segundo lugar, las ganancias de
-                capital pueden surgir de la apreciación del valor de las acciones con el tiempo, lo que brinda la
-                oportunidad de vender las acciones a un precio superior al de compra. No obstante, es importante
-                destacar que las inversiones en acciones también conllevan riesgos inherentes. El valor de las acciones
-                puede fluctuar significativamente en respuesta a una variedad de factores, como eventos económicos,
-                cambios en la industria y desarrollos geopolíticos. Por lo tanto, es esencial que los inversores
-                comprendan la importancia de una gestión de riesgos efectiva y la necesidad de mantener una perspectiva
-                a largo plazo.
-            </p>
-            <p>Las bolsas de valores, sin lugar a dudas, representan el epicentro de las transacciones financieras a
-                nivel mundial. Estos mercados organizados desempeñan un papel fundamental en la economía global al
-                proporcionar un escenario donde los inversores pueden comprar y vender una amplia gama de instrumentos
-                financieros, que incluyen no solo acciones, sino también bonos, materias primas y derivados. Son un
-                reflejo de la dinámica económica a nivel mundial y funcionan como un indicador que refleja el estado de
-                la economía y el apetito de los inversores. La tecnología, en los últimos años, ha sido un catalizador
-                de cambios significativos en el funcionamiento de las bolsas de valores. La digitalización de las
-                transacciones y la adopción de sistemas de comercio electrónico han permitido la realización de
-                transacciones casi instantáneas, lo que ha transformado la forma en que los inversores interactúan con
-                los mercados financieros. Esto, a su vez, ha democratizado el acceso a la inversión, ya que las
-                plataformas de negociación en línea han eliminado barreras geográficas y han abierto las puertas a
-                inversores de todo el mundo. </p>
-            <p>Las bolsas de valores desempeñan un papel crucial en el sistema financiero global, y la diversificación
-                continúa siendo una estrategia esencial en la gestión de inversiones. La tecnología ha allanado el
-                camino para una mayor accesibilidad y liquidez en los mercados financieros, pero la incertidumbre
-                inherente de los mercados requiere que los inversores sean informados y cautelosos en sus decisiones. La
-                evaluación constante de las condiciones actuales y una comprensión sólida de los principios de
-                diversificación siguen siendo fundamentales para el éxito en el mundo de las inversiones en bolsa. </p>
-            <p>Las empresas NTF han irrumpido en el mundo de las inversiones de manera revolucionaria, y su impacto se
-                está haciendo sentir en múltiples ámbitos. Estas empresas representan un cambio fundamental en la forma
-                en que los inversores pueden acceder y poseer activos. A diferencia de los fondos de inversión
-                tradicionales, las NTF operan en la tecnología de la cadena de bloques, la misma que subyace en las
-                criptomonedas, y hacen uso de activos digitales, como tokens, para representar la propiedad de activos
-                subyacentes que pueden abarcar desde bienes raíces hasta obras de arte valiosas y empresas emergentes
-                con potencial de crecimiento. El potencial disruptivo de las empresas NTF es inmenso. Por un lado, la
-                tecnología de la cadena de bloques garantiza la transparencia, la inmutabilidad de los registros y la
-                seguridad de las transacciones, lo que aporta un nivel de confiabilidad sin precedentes al proceso de
-                inversión. Además, la tokenización de activos permite el fraccionamiento, lo que significa que los
-                inversores pueden poseer una parte de un activo de alto valor, lo que antes estaba reservado a un grupo
-                selecto de inversionistas acreditados. Esto democratiza la inversión, permitiendo que una audiencia más
-                amplia participe en oportunidades que antes estaban fuera de su alcance. Sin embargo, a medida que las
-                empresas NTF continúan ganando popularidad, también enfrentan desafíos significativos, especialmente en
-                términos de regulación. La tecnología de la cadena de bloques y la tokenización de activos son
-                relativamente nuevas en el panorama de inversión, y los marcos regulatorios varían ampliamente según las
-                jurisdicciones. La falta de regulación adecuada podría exponer a los inversores a riesgos
-                significativos, como fraudes o actividades ilegales. Por lo tanto, es esencial que los gobiernos y las
-                autoridades reguladoras desarrollen marcos legales sólidos que equilibren la innovación con la
-                protección de los inversores.</p>
-            <p>Las inversiones, las acciones, la bolsa de valores y las empresas NTF representan pilares fundamentales
-                en el complejo mundo de las finanzas. La inversión, en todas sus formas, encarna la búsqueda constante
-                de un delicado equilibrio entre la prudencia y la ambición. Es un terreno donde la diligencia y la toma
-                de decisiones informadas son esenciales para el éxito a largo plazo. La inversión es un campo en
-                constante evolución, y aquellos que están dispuestos a adaptarse y aprender son los que tienen mayores
-                posibilidades de cosechar los mayores beneficios financieros. </p>
-            <p>
-                En última instancia, la inversión es un viaje en constante evolución, que requiere tanto la búsqueda de
-                oportunidades como la mitigación de riesgos. Aquellos que estén dispuestos a aprender, adaptarse y
-                aplicar estrategias sólidas estarán mejor preparados para aprovechar al máximo las oportunidades y
-                superar los desafíos en el emocionante mundo de las finanzas. La inversión es una herramienta poderosa
-                para el crecimiento financiero, pero su éxito depende en última instancia de la preparación, la
-                paciencia y la comprensión de los principios clave que sustentan este apasionante campo.
-            </p>
-            
-            
-        </article>
-    </main>
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="Enviar">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="ubi.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia, Cali, Valle del cauca
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3007189991
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: Michelle.norato@correounivalle.edu.co
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
     <footer>
-        <p>&copy; 2023 Michelle Norato Quintero.</p>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100004403596652&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        ® Michelle Norato 2023 
     </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        document.getElementById("verEnsayo").addEventListener("click", function() {
+            window.location.href = "#Ensayo";
+        });
+        document.getElementById("Enviar").addEventListener("click", function() {
+            alert("Mensaje enviado");
+        });
+    </script>
+
 </body>
 
 </html>
