@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -80,7 +80,7 @@
 </head>
 
 <body>
-    <div class="cabezera"id="inicio">
+    <div class="cabezera" id="inicio">
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-red w3-card w3-left-align w3-large">
@@ -88,7 +88,8 @@
                     href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
                         class="fa fa-bars"></i></a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Principal</a>
-                <a href="#contacto" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacto</a>
+                <a href="#contacto"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contacto</a>
             </div>
 
             <!-- Navbar on small screens -->
@@ -100,26 +101,27 @@
         <!-- Header -->
         <header class="w3-container w3-red w3-center" style="padding:128px 16px">
             <h3 class="w3-margin w3-jumbo"> Blog financiero</h3>
-            <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"id="verEnsayo">Ver Ensayo</button>
+            <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" id="verEnsayo">Ver
+                Ensayo</button>
         </header>
     </div>
 
     <!-- First Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container" >
+    <div class="w3-row-padding w3-padding-64 w3-container">
         <div class="w3-content">
             <div class="w3-twothird">
                 <h1>Sobre el blog:</h1>
-                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                <h5 class="w3-padding-32">Este blog es creado por una estudiante universitaria dispuesta a compartir
+                    sus trabajos y análisis acerca del mundo financiero y todo lo que lo compone, con la intención de
+                    que todas las personas que estén interesadas por fines investigativos, académicos o simple interés
+                    puedan acceder a esta información que puede ser de mucha ayuda. <br> <br>
 
-                <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    Saber de finanzas es importante porque te capacita para tomar decisiones
+                    financieras informadas, lo que puede conducir a una mayor estabilidad económica, una planificación
+                    efectiva para el futuro, la capacidad de invertir sabiamente y evitar el endeudamiento excesivo,
+                    contribuyendo en última instancia a tu bienestar financiero y calidad de vida.</h5>
+
+               
             </div>
 
 
@@ -132,13 +134,13 @@
     </div>
 
     <!-- Second Grid -->
-    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container "id="Ensayo">
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container " id="Ensayo">
         <div class="w3-content">
 
             <div class="w3-twothird">
 
-                <h3 class="w3-padding-32">Inversiones. Acciones. Bolsa y empresas N.T.F. <br>
-                    Investments. Behavior. Stock market and N.T.F companies</h3>
+                <h3 class="w3-padding-32">Inversiones. Acciones. Bolsa y empresas N.T.F.
+                </h3>
 
                 <article>
 
@@ -335,10 +337,7 @@
                                 <i class="fa-solid fa-location-dot"></i>
                                 Colombia, Cali, Valle del cauca
                             </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 3007189991
-                            </li>
+
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
                                 Email: Michelle.norato@correounivalle.edu.co
@@ -355,12 +354,8 @@
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
-        <div class="redes">
-            <a href="https://www.facebook.com/profile.php?id=100004403596652&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-        ® Michelle Norato 2023 
+
+        ® Michelle Norato 2023
     </footer>
 
     <script>
@@ -373,10 +368,10 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-        document.getElementById("verEnsayo").addEventListener("click", function() {
+        document.getElementById("verEnsayo").addEventListener("click", function () {
             window.location.href = "#Ensayo";
         });
-        document.getElementById("Enviar").addEventListener("click", function() {
+        document.getElementById("Enviar").addEventListener("click", function () {
             alert("Mensaje enviado");
         });
     </script>
